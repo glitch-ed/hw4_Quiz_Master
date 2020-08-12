@@ -1,4 +1,21 @@
-.header{
+body {
+    background-color: rgb(201, 60, 60);
+}
+#quizBox{
     text-align: center;
+    background-color: rgb(31, 27, 27);
+    margin-top: 150px;
+    padding: 10px;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: seashell;
 
 }
+h1,h2,#result{
+    color: seashell;
+}
+#score,#time{
+    font-size: 24px;
+    font-weight: bold;
+}
+

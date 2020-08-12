@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop Quiz</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="style.css">
+    <link rel="text/javascript" href="script.js">
 </head>
 <body>
-    <h1 class="header">Quiz Time</h1>
 
-    <div class="card w-75">
-        <div class="card-body">
-          <h5 class="card-title">Question 1</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
-          <a href="#" class="btn btn-primary">Button</a>
-          <a href="#" class="btn btn-primary">Button</a>
-          <a href="#" class="btn btn-primary">Button</a>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-2" id="score">
+        High Score:  
       </div>
-    
+      <div class="col-8" id="quizBox">
+        <h1 class=>Quiz Time</h1>
+        <h2>What is the air speed velocity of an unladen swallow?</h2>
+          <button type="button" class="btn btn-primary btn-lg btn-block ans1">Answer 1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block ans3">Answer 2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block ans4">Answer 3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block ans4">Answer 4</button>
+          <br>
+          <div id="result">Wrong or Right</div>
+      </div>
+      <div class="col-2" id="time">
+        Time: 
+      </div>
+    </div>
+  </div>
+ 
+  
+  
     
 </body>
 </html>
