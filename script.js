@@ -61,7 +61,7 @@ var questions = [{
 
 var questionEl = document.getElementById("ask");
 var score = document.getElementById("score")
-var currentScore =0
+var currentScore = 0
 var right = document.getElementById("right")
 var displayQuest = {}
 var questLog = [];
@@ -74,6 +74,9 @@ var start = document.querySelector(".start");
 
 
 // timer count down from 60
+//function to starttimer
+//something to notify time is done
+
 start.addEventListener("click", startTimer)
 function startTimer() { 
     if(startTimer) start.style.display = "none";
@@ -90,6 +93,10 @@ function startTimer() {
   }, 1000)
 }
 
+// function to generate questions
+// need to choose a question randomly from object
+//need to dispaly question 
+//need to display answer
 start.addEventListener("click", startQuiz)
 function startQuiz () {
     score = 0;
@@ -99,28 +106,23 @@ function startQuiz () {
     newQuest();
 };
 
-start.addEventListener("click", newQuest)
+
 function newQuest() {
     var questIndex = Math.floor(Math.random() * questLog.length);
     displayQuest = questLog[questIndex];
     questionEl.innerText = displayQuest.q;
     
-    answer.forEach(selection => {
+    answer.forEach(function(selection) {
         var number = selection.dataset["number"];
         selection.innerText = displayQuest["a" + number]
     });
-   
+   //I need to clear the start btn after timer starts
     questLog.splice(questIndex, 1);
 
     correctAns = true;
-
-    if (questLog.length === 0) {
-        return;
-    
-    }
 };
 
-answer.forEach(selection => {
+answer.forEach(function(selection) {
     selection.addEventListener("click", e => {
         console.log(e.target)
         if(!correctAns) return;
@@ -129,14 +131,20 @@ answer.forEach(selection => {
         var pickAns = pickSelect.dataset["number"];
         console.log(pickAns == displayQuest.anw);
        
-        
         newQuest();
 
     });
 });
-    
+ 
+//need to keep indcrement score
+//need to decriment time when wrong answer is chosen
 
-keepScore
+function keepScore(){
+    currentScore++;
+    score.textContent(currentScore)
+
+}
+
 
 
 
