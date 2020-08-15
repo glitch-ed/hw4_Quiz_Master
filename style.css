@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(201, 60, 60);
+    background-color: grey;
 }
 #quizBox{
     text-align: center;
@@ -14,8 +14,17 @@ body {
 h1,h2,#result{
     color: seashell;
 }
+.start {
+    background-color: rgb(108, 175, 108);
+    width: 100px;
+}
 #score,#time{
     font-size: 24px;
     font-weight: bold;
 }
-
+#time {
+    float: left;
+}
+#right {
+    color: white;
+}

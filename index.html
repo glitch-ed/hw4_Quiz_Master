@@ -6,33 +6,35 @@
     <title>Pop Quiz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="text/javascript" href="script.js">
+     
 </head>
-<body>
-
+<body id="body">
+   
   <div class="container">
     <div class="row">
       <div class="col-2" id="score">
-        High Score:  
+        Score
+        <div class="score">0</div>
       </div>
       <div class="col-8" id="quizBox">
-        <h1 class=>Quiz Time</h1>
-        <h2>What is the air speed velocity of an unladen swallow?</h2>
-          <button type="button" class="btn btn-primary btn-lg btn-block ans1">Answer 1</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block ans3">Answer 2</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block ans4">Answer 3</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block ans4">Answer 4</button>
-          <br>
-          <div id="result">Wrong or Right</div>
+        <h1>Javascript Quiz!</h1>
+        <h2 id="ask">You have 60 seconds! Click Start to get begin!</h2>
+        <button type="button" class="btn btn-primary btn-lg btn-block ans" data-number="1">1</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block ans" data-number="2">2</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block ans" data-number="3">3</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block ans" data-number="4">4</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block start">Start</button>
+        
       </div>
       <div class="col-2" id="time">
-        Time: 
+        Time
+        <div id="seconds">60</div>        
       </div>
     </div>
   </div>
  
   
   
-    
+  <script src="./script.js"></script>
 </body>
 </html>
