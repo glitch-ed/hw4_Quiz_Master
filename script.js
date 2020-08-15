@@ -127,11 +127,8 @@ answer.forEach(selection => {
         correctAns = false;
         var pickSelect = e.target;
         var pickAns = pickSelect.dataset["number"];
-        currentScore = 0
         console.log(pickAns == displayQuest.anw);
-        if(correctAns = true){
-            currentScore++
-            score.innerText = currentScore;
+       
         }
         
         newQuest();
@@ -140,7 +137,7 @@ answer.forEach(selection => {
 });
     
 
-
+keepScore
 
 
 
