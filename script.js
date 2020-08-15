@@ -129,7 +129,6 @@ answer.forEach(selection => {
         var pickAns = pickSelect.dataset["number"];
         console.log(pickAns == displayQuest.anw);
        
-        }
         
         newQuest();
 
